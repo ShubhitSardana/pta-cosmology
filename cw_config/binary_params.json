@@ -1,0 +1,58 @@
+{
+    "cosmology": {
+        "log10_H0_truth": 1.8287,
+        "Om0": 0.315,
+        "Ode0": 0.685
+    },
+    "gwb": {
+        "gw_gamma": 4.33,
+        "gw_log10_A": -14.64
+    },
+    "binaries": {
+        "B1": {
+            "name": "Gondor SDSS J072908.71+400836",
+            "ra": "07:29:08.60",
+            "dec": "40:08:37.0",
+            "alternative_positions": [],
+            "position_note": "Optimal",
+            "mc": 3.69e9,
+            "mc_sigma_log10": 0.3,
+            "lum_dist": 327.5748292721689,
+            "fgw": 14.4e-9,
+            "phase0": 3.14,
+            "psi": 1.54,
+            "inc_deg": 57.316,
+            "z": 0.07
+        },
+        "B2": {
+            "name": "Rohan SDSS J153636.22+044127",
+            "ra": "15:36:36.20",
+            "dec": "04:41:26.9",
+            "alternative_positions": [],
+            "position_note": "Normal",
+            "mc": 6.745e9,
+            "mc_sigma_log10": 0.34,
+            "lum_dist": 2115.11,
+            "fgw": 20.8e-9,
+            "phase0": 3.17,
+            "psi": 1.59,
+            "inc_deg": 110.487,
+            "z": 0.38
+        },
+        "B3": {
+            "name": "SDSS J080809.56+311519.1",
+            "ra": "08:08:09.50",
+            "dec": "31:15:18.9",
+            "alternative_positions": [],
+            "position_note": "Normal",
+            "mc": 3.78e10,
+            "mc_sigma_log10": 0.3,
+            "lum_dist": 22315.768,
+            "fgw": 19.9e-9,
+            "phase0": 3.17,
+            "psi": 1.59,
+            "inc_deg": 110.487,
+            "z": 2.64
+        }
+    }
+}
