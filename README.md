@@ -1,4 +1,4 @@
-# Continuous Gravitational Waves and Cosmology with PTAs
+# The Targeted Standard Siren Cosmology with Pulsar Timing Arrays
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.12168v1-B31B1B.svg)](https://arxiv.org/abs/2603.12168v1)
 
@@ -126,14 +126,17 @@ Both `cgw_cosmo.py` and `cgw.py` expose a similar command-line interface via `ar
 Run an MCMC analysis with injected signals for 10 pulsars and generate posterior corner plots:
 
 ```bash
-python cgw_cosmo.py \
+python -u cgw_local_whiten.py \
     --run_mcmc \
     --add_inj \
-    --num_psrs 10 \
-    --corner \
-    --de_whiten \
-    -o results_dir
+    -p 10 \
+    -b 2 \
+    -n 10_000_000 \
+    --suffix H0+Om \
+    --data_dir ./data/CPTA/cpta-b40-40yr/ \
+    -o ./output_local_whiten/b40-40yr/
 ```
+
 
 ---
 
