@@ -2,11 +2,11 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.12168v1-B31B1B.svg)](https://arxiv.org/abs/2603.12168v1)
 
-This repository contains the simulation and Bayesian inference pipeline used in the paper **“Continuous Gravitational Waves and Cosmology with PTAs”** ([arXiv:2603.12168v1](https://arxiv.org/abs/2603.12168v1)).
+This repository contains the Bayesian inference code used in the paper **“The Targeted Standard Siren Cosmology with Pulsar Timing Arrays”** ([arXiv:2603.12168v1](https://arxiv.org/abs/2603.12168v1)).
 
 The framework performs joint parameter estimation of:
 
-* Continuous Gravitational Wave (CGW) sources
+* Multiple Continuous Gravitational Wave (CGW) sources
 * Pulsar Timing Array (PTA) noise processes
 * Cosmological parameters such as:
 
@@ -25,7 +25,7 @@ using PTA timing residual data and MCMC-based Bayesian inference.
 ├── cgw.py            # Standard multi-binary CGW MCMC analysis
 ├── inject_signals.py # Signal and noise injection utilities
 ├── whiten.py         # Whitening transforms for PTMCMCSampler
-├── data/             # PTA .par and .tim files
+├── data/             # Simulated CPTA .par and .tim files
 └── cw_config/        # JSON configuration files
 ```
 
@@ -33,11 +33,11 @@ using PTA timing residual data and MCMC-based Bayesian inference.
 
 ### `cgw_cosmo.py`
 
-Primary execution script for the combined Continuous Gravitational Wave and cosmology inference pipeline.
+Primary execution script for the combined Continuous Gravitational Wave and cosmology inference.
 
 ### `cgw.py`
 
-Runs standard CGW parameter estimation without cosmological inference.
+Runs standard CGW parameter estimation without Matter density parameter $\Omega_m$ inference.
 
 ### `inject_signals.py`
 
@@ -61,18 +61,19 @@ Implements optimized parameter whitening transformations for `PTMCMCSampler` to 
 * Bayesian inference for CGW sources in PTA datasets
 * Joint cosmological parameter estimation
 * Multi-binary signal modeling
-* Synthetic signal injection framework
-* Noise modeling support:
+* Synthetic signal injection
+* Noise modeling:
 
   * White Noise
   * Pulsar Red Noise
   * Common Uncorrelated Red Noise
-* Whitening support for accelerated MCMC convergence
-* Posterior visualization tools:
+* Whitening support for faster MCMC convergence
+* Posterior visualization:
 
   * Corner plots
   * 1D marginalized histograms
 
+All integrated in just one script.
 ---
 
 # Dependencies
@@ -105,16 +106,9 @@ The codebase relies on the standard PTA analysis ecosystem and scientific Python
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/ShubhitSardana/pta-cosmology.git
+cd pta-cosmology
 ```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 # Usage
