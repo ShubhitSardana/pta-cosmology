@@ -72,8 +72,9 @@ Implements optimized parameter whitening transformations for `PTMCMCSampler` to 
 
   * Corner plots
   * 1D marginalized histograms
-
-## All integrated in just one script.
+```text
+All integrated in just one script.
+```
 ---
 
 # Dependencies
