@@ -198,10 +198,6 @@ archivePrefix = {arXiv},
 
 # License
 
-Specify your project license here.
-
-Example:
-
 ```text
 MIT License
 ```
