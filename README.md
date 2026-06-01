@@ -119,7 +119,7 @@ Both `cgw_cosmo.py` and `cgw.py` expose a similar command-line interface via `ar
 Run an MCMC analysis with injected signals for 10 pulsars and generate posterior corner plots:
 
 ```bash
-python -u cgw_local_whiten.py \
+python -u cgw_cosmo.py \
     --run_mcmc \
     --add_inj \
     -p 10 \
