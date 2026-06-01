@@ -176,11 +176,21 @@ Contains JSON configuration files for:
 If you use this repository in your research, please cite:
 
 ```bibtex
-@article{cgw_cosmo_2026,
-  title={Continuous Gravitational Waves and Cosmology with PTAs},
-  author={Author Names},
-  journal={arXiv preprint arXiv:2603.12168},
-  year={2026}
+@ARTICLE{SardanaGoncharov2026,
+       author = {{Sardana}, Shubhit and {Goncharov}, Boris and {Cardinal Tremblay}, Jacob},
+        title = "{The Targeted Standard Siren Cosmology with Pulsar Timing Arrays}",
+      journal = {arXiv e-prints},
+     keywords = {Cosmology and Nongalactic Astrophysics, High Energy Astrophysical Phenomena, Instrumentation and Methods for Astrophysics, General Relativity and Quantum Cosmology},
+         year = 2026,
+        month = mar,
+          eid = {arXiv:2603.12168},
+        pages = {arXiv:2603.12168},
+          doi = {10.48550/arXiv.2603.12168},
+archivePrefix = {arXiv},
+       eprint = {2603.12168},
+ primaryClass = {astro-ph.CO},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv260312168S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
 
