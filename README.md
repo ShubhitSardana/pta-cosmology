@@ -13,7 +13,7 @@ The framework performs joint parameter estimation of:
   * Hubble constant $H_0$
   * Matter density parameter $\Omega_m$
 
-using PTA timing residual data and MCMC-based Bayesian inference.
+and could be easily extended to other parameters, using PTA timing residual data and MCMC-based Bayesian inference.
 
 ---
 
@@ -44,16 +44,16 @@ Runs standard CGW parameter estimation without Matter density parameter $\Omega_
 
 Utilities for injecting:
 
-* Continuous gravitational wave signals
+* Continuous gravitational wave (CGW) signals
 * White noise
 * Pulsar red noise
-* Common red noise processes
+* Common red noise processes (CURN)
 
 into PTA datasets.
 
 ### `whiten.py`
 
-Implements optimized parameter whitening transformations for `PTMCMCSampler` to improve convergence and sampling efficiency in high-dimensional parameter spaces.
+Implements parameter whitening transformations for `PTMCMCSampler` to improve convergence and sampling efficiency in high-dimensional parameter spaces.
 
 ---
 
