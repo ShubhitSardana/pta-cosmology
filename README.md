@@ -27,6 +27,7 @@ using PTA timing residual data and MCMC-based Bayesian inference.
 ├── whiten.py         # Whitening transforms for PTMCMCSampler
 ├── data/             # Simulated CPTA .par and .tim files
 └── cw_config/        # JSON configuration files
+└── output_chains/    # Output chain files
 ```
 
 ## Main Scripts
