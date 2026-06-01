@@ -26,7 +26,7 @@ using PTA timing residual data and MCMC-based Bayesian inference.
 ├── inject_signals.py # Signal and noise injection utilities
 ├── whiten.py         # Whitening transforms for PTMCMCSampler
 ├── data/             # Simulated CPTA .par and .tim files
-└── cw_config/        # JSON configuration files
+├── cw_config/        # JSON configuration files
 └── output_chains/    # Output chain files
 ```
 
